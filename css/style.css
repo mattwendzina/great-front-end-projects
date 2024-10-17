@@ -1,0 +1,92 @@
+:root {
+  --primary: #ffffff;
+  --secondary: #171717;
+  --tertiary: #525252;
+  --quaternary: #f9fafb;
+
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  min-height: 100vh;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.credits {
+  color: #777;
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.credits a {
+  color: #000;
+  font-weight: bold;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.c-testimonial-card {
+  font-size: var(--text-base);
+  max-width: 340px;
+  margin-top: 200px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),
+    0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+
+  border-radius: 5px;
+  padding: 1.5rem;
+}
+
+.c-testimonial-card__user-details {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.c-testimonial-card__profile-img-wrapper {
+  max-width: 48px;
+}
+
+.c-testimonial-card__fullname {
+  color: var(--secondary);
+  font-size: var(--text-lg);
+  font-weight: var(--font-semibold);
+}
+
+.c-testimonial-card__username {
+  color: var(--tertiary);
+  font-size: var(--text-sm);
+}
+.c-testimonial-card__testimony {
+  color: var(--tertiary);
+}
+
+@media screen and (min-width: 1280px) {
+  .wrapper {
+    max-width: 1280px;
+  }
+}
